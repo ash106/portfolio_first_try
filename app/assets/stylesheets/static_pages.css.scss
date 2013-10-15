@@ -9,12 +9,23 @@
   margin-bottom: 60px;
 }
 
+.main-section {
+  @include make-row();
+}
+
 .about-me {
-  @include make-lg-column(4);
+  @include make-lg-column(3);
+  h1 {
+    margin-top: 0px;
+  }
 }
 
 .carousel-wrapper{
-  @include make-lg-column(8);
+  @include make-lg-column(9);
+}
+
+.skills-section {
+  @include make-row();
 }
 
 .skill {
