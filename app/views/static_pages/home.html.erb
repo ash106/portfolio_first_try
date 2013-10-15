@@ -1,73 +1,73 @@
+<div class="row">
+  <div class="about-me">
+    <h1>About Me</h1>
+    <p>Hi, I'm Alex and I'm a web developer. I'm currently learning Rails, Sass, jQuery, Coffeescript, and some other cool stuff at DevpointLabs, a coding bootcamp located in Salt Lake City, UT. I made this site as a Rails app after 4 weeks in class! I think that's pretty awesome. I'll be updating the site as I learn about all the cool new stuff I'm not even aware of yet. For now though, Rails and Bootstrap are more than enough for me to explore, so back to Sublime Text!
+  </div>
 
-<div class="col-lg-3 col-md-3">
-  <h1>About Me</h1>
-  <p>Hi, I'm Alex and I'm a web developer. I'm currently learning Rails, Sass, jQuery, Coffeescript, and some other cool stuff at DevpointLabs, a coding bootcamp located in Salt Lake City, UT. I made this site as a Rails app after 4 weeks in class! I think that's pretty awesome. I'll be updating the site as I learn about all the cool new stuff I'm not even aware of yet. For now though, Rails and Bootstrap are more than enough for me to explore, so back to Sublime Text!
-</div>
 
-<div class="col-lg-9 col-md-9"> 
-  <div id="carousel-example-generic" class="carousel slide">
-    <!-- Indicators -->
-    <ol class="carousel-indicators">
-      <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-      <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-      <li data-target="#carousel-example-generic" data-slide-to="2"></li>
-    </ol>
+  <div class="carousel-wrapper">
+    <div id="carousel-home" class="carousel slide">
+      <!-- Indicators -->
+      <ol class="carousel-indicators">
+        <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+        <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+        <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+      </ol>
 
-    <!-- Wrapper for slides -->
-    <div class="carousel-inner">
-      <div class="item active">
-        <%= image_tag "sunset_crop.jpg" %>
-        <div class="carousel-caption">
-          <h1>This is a pretty fucking decent carousel!</h1>
+      <!-- Wrapper for slides -->
+      <div class="carousel-inner">
+        <div class="item active">
+          <%= image_tag "sunset_crop.jpg" %>
+          <div class="carousel-caption">
+            <h1>This is a pretty fucking decent carousel!</h1>
+          </div>
+        </div>
+        <div class="item">
+          <%= image_tag "brighton_crop.jpg" %>
+          <div class="carousel-caption">
+            <h1>I've been here before!</h1>
+          </div>
+        </div>
+        <div class="item">
+          <%= image_tag "riot_crop.jpg" %>
+          <div class="carousel-caption">
+            <h1>Jealous, bitches?</h1>
+          </div>
         </div>
       </div>
-      <div class="item">
-        <%= image_tag "brighton_crop.jpg" %>
-        <div class="carousel-caption">
-          <h1>I've been here before!</h1>
-        </div>
-      </div>
-      <div class="item">
-        <%= image_tag "riot_crop.jpg" %>
-        <div class="carousel-caption">
-          <h1>Jealous, bitches?</h1>
-        </div>
-      </div>
+
+      <!-- Controls -->
+      <a class="left carousel-control" href="#carousel-home" data-slide="prev">
+        <span class="icon-prev"></span>
+      </a>
+      <a class="right carousel-control" href="#carousel-home" data-slide="next">
+        <span class="icon-next"></span>
+      </a>
     </div>
-
-    <!-- Controls -->
-    <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
-      <span class="icon-prev"></span>
-    </a>
-    <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
-      <span class="icon-next"></span>
-    </a>
   </div>
 </div>
 
 
-
-
 <div class="row">
-  <div class="col-lg-4 col-md-4 skill">
+  <div class="skill">
     <!-- <img class="img-circle" src="" data-src="holder.js/140x140" alt="140x140" style="width: 140px; height: 140px;"> -->
     <%= image_tag "dude_wtf.jpg", class: "img-dude" %>
     <h2>Web Dev</h2>
     <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
     <p><a class="btn btn-default" href="#">View details »</a></p>
-  </div><!-- /.col-lg-4 -->
-  <div class="col-lg-4 col-md-4 skill">
+  </div>
+  <div class="skill">
     <%= image_tag "dude_wtf.jpg", class: "img-dude" %>
     <h2>Snowboarding</h2>
     <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
     <p><a class="btn btn-default" href="#">View details »</a></p>
-  </div><!-- /.col-lg-4 -->
-  <div class="col-lg-4 col-md-4 skill">
+  </div>
+  <div class="skill">
     <%= image_tag "dude_wtf.jpg", class: "img-dude" %>
     <h2>Ninja Shit</h2>
     <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
     <p><a class="btn btn-default" href="#">View details »</a></p>
-  </div><!-- /.col-lg-4 -->
+  </div>
 </div>
 
 

@@ -9,7 +9,16 @@
   margin-bottom: 60px;
 }
 
+.about-me {
+  @include make-lg-column(4);
+}
+
+.carousel-wrapper{
+  @include make-lg-column(8);
+}
+
 .skill {
+  @include make-lg-column(4);
   text-align: center;
   margin-bottom: 20px;
 }
@@ -18,3 +27,4 @@
   width: 140px;
   height: 140px;
 }
+
