@@ -61,6 +61,6 @@ module Portfolio
 
     config.assets.initialize_on_precompile = false
 
-    config.secret_token = ENV['8f87f464cf5e2c13987a8ec67665482e8724db652857864ede906f5a4f29ebb13a56db194bdef8f741aec9b9f5036118ad8ecf527483b82e796a5a4692201b2f]
+    # config.secret_token = ENV['8f87f464cf5e2c13987a8ec67665482e8724db652857864ede906f5a4f29ebb13a56db194bdef8f741aec9b9f5036118ad8ecf527483b82e796a5a4692201b2f]
   end
 end
