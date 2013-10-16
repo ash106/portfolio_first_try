@@ -13,15 +13,17 @@
   @include make-row();
 }
 
+.carousel-wrapper{
+  @include make-lg-column(9);
+  @include make-lg-column-push(3);
+}
+
 .about-me {
   @include make-lg-column(3);
+  @include make-lg-column-pull(9);
   h1 {
     margin-top: 0px;
   }
-}
-
-.carousel-wrapper{
-  @include make-lg-column(9);
 }
 
 .skills-section {
