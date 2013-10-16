@@ -9,6 +9,9 @@ gem 'rails-i18n', '~> 3.0.0' # For 3.x
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
 gem 'pg'
+gem 'simple_form'
+gem 'devise'
+gem 'figaro'
 
 group :development do
   gem 'powder'
