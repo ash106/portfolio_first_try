@@ -9,29 +9,26 @@
   margin-bottom: 60px;
 }
 
-.main-section {
-  @include make-row();
+.header-section {
+  // @include make-row();
 }
 
-.carousel-wrapper{
-  @include make-lg-column(9);
-  @include make-lg-column-push(3);
+.main-content {
+  @include make-row();
 }
 
 .about-me {
   @include make-lg-column(3);
-  @include make-lg-column-pull(9);
+  @include make-md-column(3);
+  // @include make-lg-column-pull(9);
   h1 {
     margin-top: 0px;
   }
 }
 
-.skills-section {
-  @include make-row();
-}
-
 .skill {
-  @include make-lg-column(4);
+  @include make-lg-column(3);
+  @include make-md-column(3);
   text-align: center;
   margin-bottom: 20px;
 }
