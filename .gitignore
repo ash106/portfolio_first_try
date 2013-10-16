@@ -22,3 +22,5 @@ pickle-email-*.html
 .ruby-version
 .rvmrc
 .powenv
+# Ignore application configuration
+/config/application.yml
