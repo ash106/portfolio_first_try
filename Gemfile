@@ -12,6 +12,7 @@ gem 'pg'
 gem 'simple_form'
 gem 'devise'
 gem 'figaro'
+gem 'letter_opener'
 
 group :development do
   gem 'powder'

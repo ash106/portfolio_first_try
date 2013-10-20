@@ -1,4 +1,6 @@
 class UserMailer < ActionMailer::Base
+  layout 'email'
+
   default from: "noreply@devpointlabs.com"
   #Call email using: UserMailer.welcome(user).deliver
   def welcome(user)
