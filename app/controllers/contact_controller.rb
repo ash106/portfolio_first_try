@@ -10,7 +10,7 @@ class ContactController < ApplicationController
       redirect_to root_path, notice: "Thanks for contacting me. I'll be in touch soon!"
     else
       flash.now.alert = "Please correct the errors below"
-      render :new
+      render action: 'new'
     end
   end
 end
