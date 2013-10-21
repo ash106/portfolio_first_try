@@ -1,10 +1,15 @@
 Portfolio::Application.routes.draw do
+
   devise_for :users
 
   root :to => 'static_pages#home'
 
   get "about", to: 'static_pages#about', as: :about
-  get "contact", to: 'static_pages#contact', as: :contact
+  # get "contact", to: 'static_pages#contact', as: :contact
+
+  # Contact form
+  get "contact-us", to: 'contact#new', as: :contact
+  post "contact-us", to: 'contact#create', as: :contact
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
