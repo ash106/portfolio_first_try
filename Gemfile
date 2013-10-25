@@ -17,11 +17,20 @@ group :development do
   gem 'meta_request'
   gem 'xray-rails'
   gem 'letter_opener'
+  gem 'guard'   # Use `guard init` to setup
+  gem 'rb-fsevent', require: false
+  gem 'guard-pow' 
+  gem 'guard-minitest'
+  gem 'guard-livereload' 
+  gem "rack-livereload" # Need to put `config.middleware.use Rack::LiveReload` in your config/environments/development.rb file
+  gem 'ruby_gntp'
 end
 
 group :development, :test do
-  gem 'minitest-rails'
-  gem 'factory_girl_rails', '>= 4.2.0'
+  gem "minitest-rails", github: 'blowmage/minitest-rails'
+  gem "factory_girl_rails", ">= 4.2.0"
+  gem 'ffaker'
+  # gem "email_spec"
 end
 
 # Gems used only for assets and not required
