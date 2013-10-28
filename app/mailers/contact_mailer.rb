@@ -5,6 +5,6 @@ class ContactMailer < ActionMailer::Base
 
   def contact_us(message)
     @message = message
-    mail(to: "support@devpointlabs.com", from: @message.email, subject: @message.subject)
+    mail(to: "support@devpointlabs.com", from: @message.email, subject: "[Portfolio] #{@message.subject}")
   end
 end
