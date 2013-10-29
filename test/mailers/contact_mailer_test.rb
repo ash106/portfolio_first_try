@@ -16,8 +16,8 @@ class ContactMailerTest < ActionMailer::TestCase
   #   assert_template layout: 'layouts/email'
   # end
 
-  test "delivered to support@devpointlabs.com" do
-    assert_equal "support@devpointlabs.com", @email.to.pop
+  test "delivered to support@wheatboxstudios.com" do
+    assert_equal "support@wheatboxstudios.com", @email.to.pop
   end
 
   test "delivered from the sender's email" do

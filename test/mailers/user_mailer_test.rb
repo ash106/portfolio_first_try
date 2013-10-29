@@ -17,8 +17,8 @@ class UserMailerTest < ActionMailer::TestCase
     assert_equal @user.email, @email.to.pop
   end
 
-  test "delivered from noreply@devpointlabs.com" do
-    assert_equal "noreply@devpointlabs.com", @email.from.pop
+  test "delivered from noreply@wheatboxstudios.com" do
+    assert_equal "noreply@wheatboxstudios.com", @email.from.pop
   end
 
   test "delivered with the correct subject" do
