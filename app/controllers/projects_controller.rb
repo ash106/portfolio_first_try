@@ -26,6 +26,7 @@ class ProjectsController < ApplicationController
   # GET /projects/new.json
   def new
     @project = Project.new
+    @project.pictures.build
     @users = User.order('first_name desc')
 
     respond_to do |format|

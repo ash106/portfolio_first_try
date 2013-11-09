@@ -1,6 +1,8 @@
 Portfolio::Application.configure do
   # Settings specified here will take precedence over those in config/application.rb
 
+  Paperclip.options[:command_path] = "/usr/local/bin/"
+  
   config.middleware.use Rack::LiveReload
 
   # In the development environment your application's code is reloaded on
