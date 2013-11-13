@@ -42,7 +42,13 @@
 
   <div class="main-content">
     <div class="about-me">
-      <h1>About Me</h1>
+      <!-- <h1>About Me</h1> -->
+      <p>
+        <% if @user.picture %>
+          <p><%= image_tag(@user.picture.image.url(:small), class: 'img-circle') %></p>
+        <% end %>
+      <h3> <%= @user.full_name %></h3>
+      <p>
       <p>Hi, I'm Alex and I'm a web developer. I'm currently learning Rails, Sass, jQuery, Coffeescript, and some other cool stuff at DevpointLabs, a coding bootcamp located in Salt Lake City, UT. I made this site as a Rails app after 4 weeks in class! I think that's pretty awesome. I'll be updating the site as I learn about all the cool new stuff I'm not even aware of yet. For now though, Rails and Bootstrap are more than enough for me to explore, so back to Sublime Text!</p>
     </div>
 
