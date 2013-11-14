@@ -1,5 +1,10 @@
 Portfolio::Application.routes.draw do
 
+  resources :posts, except: [:index, :create]
+  get "blog", to: 'posts#index', as: :posts
+  post "blog", to: 'posts#create', as: :posts
+
+
   resources :projects
 
 

@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20131109003813) do
+ActiveRecord::Schema.define(:version => 20131113104213) do
 
   create_table "pictures", :force => true do |t|
     t.string   "caption"
@@ -28,6 +28,19 @@ ActiveRecord::Schema.define(:version => 20131109003813) do
 
   add_index "pictures", ["pictureable_id"], :name => "index_pictures_on_pictureable_id"
 
+  create_table "posts", :force => true do |t|
+    t.string   "title"
+    t.text     "body"
+    t.datetime "published_at"
+    t.integer  "user_id"
+    t.string   "seo_title"
+    t.string   "seo_description"
+    t.datetime "created_at",      :null => false
+    t.datetime "updated_at",      :null => false
+  end
+
+  add_index "posts", ["user_id"], :name => "index_posts_on_user_id"
+
   create_table "projects", :force => true do |t|
     t.string   "name"
     t.text     "description"
@@ -41,6 +54,16 @@ ActiveRecord::Schema.define(:version => 20131109003813) do
   end
 
   add_index "projects", ["user_id"], :name => "index_projects_on_user_id"
+
+  create_table "tags", :force => true do |t|
+    t.string   "name"
+    t.integer  "taggable_id"
+    t.string   "taggable_type"
+    t.datetime "created_at",    :null => false
+    t.datetime "updated_at",    :null => false
+  end
+
+  add_index "tags", ["taggable_id"], :name => "index_tags_on_taggable_id"
 
   create_table "users", :force => true do |t|
     t.string   "email",                  :default => "", :null => false

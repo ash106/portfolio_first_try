@@ -13,6 +13,7 @@ gem "paperclip", "~> 3.0"
 group :development do
   gem 'powder'
   gem 'pry-rails'
+  gem 'pry-theme'
   gem 'better_errors'
   gem 'binding_of_caller'
   gem 'meta_request'
